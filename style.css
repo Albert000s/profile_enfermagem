@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+.card-container {
+    perspective: 1500px;
+    margin: 20px; 
+    display: inline-block; 
+    margin-top: 25vh;
+}
+
+.card {
+    width: 18rem;
+    height: 300px; 
+    position: relative;
+    transition: transform 0.5s ease-in-out; 
+    transform-style: preserve-3d; 
+    cursor: pointer; 
+    background: rgba(255, 255, 255, 0.5);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.card:hover {
+    transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
+    position: absolute; 
+    height: 100%; 
+    backface-visibility: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card-back {
+    transform: rotateY(180deg); 
+}
+
+.card-img-top{
+    width: 30%; 
+    height: auto; 
+    border-radius: 50%; 
+    border: solid white 2px; 
+    margin-top: 3vh;
+}
+
+h5{
+    color: white;
+}
+
+p{
+    font-weight: bold;
+    color: white;
+}
+
+#saibaMais{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5vh;
+}
+
+#tituloFrente{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#fotojao{
+    width: 30%;
+    height: 30%;
+}
+
+a{
+    color: black;
+}
+
+#perfilGustavo{
+    height: 11vh;
+}
+
+#rodape{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 15vh;
+}
